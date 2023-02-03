@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Модуль 5. Product development. Разработка продукта</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --ribbon-size: 40px;
+        --slide-side: 41px;
+      }
+
+      .progress::before {
+        background-color: #ff0000;
+      }
+
+      .slide {
+        padding-top: 51px;
+        background-image: url("pictures/slide-cover.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+
+      .slide.clear {
+        background-image: none;
+      }
+
+      .slide::after {
+        top: auto;
+        bottom: 10px;
+        left: auto;
+        right: 30px;
+        background: none;
+        color: #000;
+      }
+
+      .slide h2 {
+        color: #000;
+        font-size: 60px;
+      }
+
+      .slide h2.shout {
+        font-size: 120px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 80%;
+      }
+
+      .slide .brand {
+        color: #ff0000;
+      }
+
+      .slide ol,
+      .slide ul {
+        padding-left: 40px;
+      }
+
+      .slide li {
+        font-size: 28px;
+      }
+
+      .slide pre {
+        font-size: 21px;
+        padding-left: 41px;
+      }
+
+      .cover {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>Модуль 5. Product development. Разработка продукта</h1>
+      <p>
+        <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+        <a href="https://mish.design/">Mish</a>
+      </p>
+    </header>
+
+    <section class="slide clear" id="cover">
+      <div style="width: 640px; padding-top: 30px; margin-left: -10px">
+        <h2>Модуль 5. Product development. Разработка продукта</h2>
+        <p>
+          <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+          <a href="https://mish.design/">Mish</a>
+        </p>
+      </div>
+      <style>
+        .shower #cover {
+          --slide-side: 60px;
+        }
+        #cover {
+          background: #fff url("pictures/title-cover.png") no-repeat center center;
+          background-size: contain;
+        }
+        #cover h2 {
+          margin: 0;
+          color: #000;
+          font-size: 62px;
+        }
+        #cover p {
+          margin: 18px 0 0;
+          color: #000;
+          font-size: 24px;
+        }
+        #cover p a {
+          color: #000;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <h2>👨‍💻 О себе</h2>
+
+      <ol>
+        <li>
+          👨 Алексей Авдеев (<a href="https://twitter.com/avdeev_alexey"
+            >https://twitter.com/avdeev_alexey</a
+          >)
+        </li>
+        <li class="next">👔 Senior Frontend, CTO</li>
+        <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+        <li class="next">🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+        <li class="next">👴 Программирую с 2002 года</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/jsonapi_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/docker_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/maxresdefault.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Жизненный цикл продукта. Методы разработки продукта</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Оценка уровня готовности технологии</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Теория решения изобретательских задач (ТРИЗ)</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Теория ограничений</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Умный жизненный цикл продукта</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout brand">Вывод</h2>
+    </section>
+
+    <section class="slide">
+      <h2>👏 Спасибо!</h2>
+
+      <ul>
+        <li>👨 Алексей Авдеев</li>
+        <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+        <li>
+          🌐
+          <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a>
+        </li>
+        <li>🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+      </ul>
+
+      <img
+        src="pictures/iam.jpeg"
+        alt="я"
+        style="height: 230px; position: absolute; right: 60px; top: 60px"
+      />
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+  </body>
+</html>
